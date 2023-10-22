@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+.contact_container {
+    margin: 40px 0;
+
+    .Contact_heading {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: normal;
+        color: $primary;
+        text-align: center;
+    }
+
+    .Contact_sub_heading {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: normal;
+        color: #838282;
+        text-align: center;
+
+    }
+
+    .contact_form_main {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+        .form_wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            button {
+                padding: 12px 30px;
+                cursor: pointer;
+                border: 1px solid $primary;
+                border-radius: 6px;
+                font-size: 20px;
+                font-weight: 500;
+                background-color: $primary;
+                color: #fff;
+
+
+            }
+        }
+    }
+}

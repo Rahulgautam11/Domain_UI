@@ -1,0 +1,75 @@
+@import '../../../index.scss';
+
+.services_list_container {
+    padding: 30px;
+    text-align: center;
+
+    .Services_heading {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: normal;
+        color: $primary;
+    }
+
+    .Services_sub_heading {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: normal;
+        color: #000;
+    }
+
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 50px;
+        text-align: left;
+        margin: 40px 0;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .card_Services {
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transition: all .5s;
+
+            &:hover {
+                box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                transition: all .5s;
+                scale: 1.03;
+            }
+
+            .domain_name {
+                font-size: 38px;
+                line-height: normal;
+                font-weight: 700;
+                color: $primary;
+                margin-bottom: 20px;
+
+                span {
+                    font-size: 45px;
+                    color: rgb(179, 16, 16);
+                }
+            }
+
+            .domain_about {
+                font-size: 20px;
+                line-height: normal;
+                font-weight: 500;
+                color: #000;
+                margin-bottom: 20px;
+            }
+
+            .domain_price {
+                font-size: 18px;
+                line-height: normal;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.6);
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+}

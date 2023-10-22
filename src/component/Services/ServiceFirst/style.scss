@@ -1,0 +1,86 @@
+@import '../../../index.scss';
+
+.service_first_container {
+    padding: 30px;
+    text-align: center;
+
+    .Services_heading {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: normal;
+        color: $primary;
+    }
+
+    .Services_sub_heading {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: normal;
+        color: $primary;
+    }
+
+    .section_wrap {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+
+        .section_img_main {
+            height: 400px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .section_caption {
+            padding: 20px;
+
+            .caption_heading {
+                font-size: 28px;
+                line-height: normal;
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 20px;
+            }
+
+            .caption_sub_heading {
+                font-size: 18px;
+                line-height: normal;
+                font-weight: 400;
+                color: #000;
+                margin-bottom: 28px;
+            }
+
+            button {
+                padding: 16px 42px;
+                cursor: pointer;
+                border: 1px solid $primary;
+                color: $primary;
+                border-radius: 6px;
+                font-size: 20px;
+                font-weight: 500;
+                background-color: transparent;
+                transition: all 0.6s;
+
+                &:hover {
+                    background-color: $primary;
+                    color: #fff;
+                    transition: all 0.6s;
+                }
+
+            }
+        }
+    }
+}
